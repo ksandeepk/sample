@@ -1,0 +1,7 @@
+<h1>Hello {{pname}}, you choose Premium Category</h1>
+<h2>Your Id:{{pid}} </h2>
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Book">
+</form>
